@@ -1,0 +1,157 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0; /*20 px para superior e inferior y 0 para laterales*/
+}
+.caja{
+    position: relative; /*Permite acomodar el elemento de su posicion inicial a otra en la pantalla*/
+    margin: 0 auto; /*calculo automatico segun la resolucion para izq y derecha*/
+    width: 940px; /*ocupando aprox el 70% de una pantalla de 1200 px*/
+
+}
+
+nav{
+    position: absolute;
+    top:110px; /*tomando en cuenta que la imagen es de 250 px de alto*/
+    right: 0px;
+    
+}
+nav li{
+display:inline-block;
+margin: 0 0 0 15px; /*arriba, abajo, derecha izquierda*/
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    
+}
+
+nav a:hover{
+    color:#c78c19;
+    text-decoration:underline ;
+}
+
+.productos{
+width: 940px;
+margin: 0 auto;
+padding: 50px;
+
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%; /*cada elemento use el 30% del espacio*/
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*El borde de cada uno de los items sera el limite que va ser definido*/
+    border-color: black;
+    border: 2px solid #000000;
+    border-radius: 25px; 
+    background: white;
+    transition: 0.5s all; 
+    /*border-width: 2px;
+    border-style: solid;
+   */
+    
+
+}
+.productos li:hover{
+    border-color: #c78c19;
+    border-style: dashed;
+    transform: scale(1.1) rotate(20deg);
+    
+}
+
+.productos li:active{
+    border-color: #888c19;
+    border-style: solid;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 35px;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 40px;
+}
+.Copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+/*Para contacto*/
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0; /*40 px arriba y abajo y 0 para los costados*/
+
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+   margin: 20px 0; 
+}
+.enviar{
+    width: 40% ;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all; /*cambiar el tiempo en el que hace la transicion al tocar el boton con el mouse de todo*/
+    cursor:pointer; /*cambiar cursor flecha a manita*/
+    
+}
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1); /*cambio de tamaño del boton*/
+    /*transform: scale(1.2) rotate(70deg);  sirve para cambiar el tam y rotar el elemento*/
+}
+
+table{
+    margin: 40px 40px;
+
+}
+thead{
+    background-color:#555555 ;
+    color: white;
+    font-weight: bold;
+}
+td ,th{
+    border:1px solid black;
+    padding: 8px 15px;
+}
+
